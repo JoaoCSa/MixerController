@@ -25,17 +25,17 @@ MF7='PB':'trimf',[3.3 5 6.25]
 
 [Input2]
 Name='ec'
-Range=[-3 3]
+Range=[-5 5]
 NumMFs=9
-MF1='NB':'trimf',[-3.75 -3 -2.25]
-MF2='NM':'trimf',[-3 -2.25 -1.5]
-MF3='NS':'trimf',[-2.25 -1.5 -0.75]
-MF4='NVS':'trimf',[-1.5 -0.75 0]
-MF5='ZE':'trimf',[-0.75 0 0.75]
-MF6='PVS':'trimf',[0 0.75 1.5]
-MF7='PS':'trimf',[0.75 1.5 2.25]
-MF8='PM':'trimf',[1.5 2.25 3]
-MF9='PB':'trimf',[2.25 3 3.75]
+MF1='NB':'trimf',[-6.25 -5 -3.75]
+MF2='NM':'trimf',[-5 -3.75 -2.5]
+MF3='NS':'trimf',[-3.75 -2.5 -1.25]
+MF4='NVS':'trimf',[-2.5 -1.25 0]
+MF5='ZE':'trimf',[-1.25 0 1.25]
+MF6='PVS':'trimf',[0 1.25 2.5]
+MF7='PS':'trimf',[1.25 2.5 3.75]
+MF8='PM':'trimf',[2.5 3.75 5]
+MF9='PB':'trimf',[3.75 5 6.25]
 
 [Output1]
 Name='q2_errors'

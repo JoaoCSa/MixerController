@@ -1,0 +1,79 @@
+[System]
+Name='FC2_2'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=27
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='eh'
+Range=[-3 3]
+NumMFs=7
+MF1='NB':'trimf',[-3.75 -3 -1.98]
+MF2='NM':'trimf',[-3 -1.98 -0.99]
+MF3='NS':'trimf',[-1.98 -0.99 0]
+MF4='ZE':'trimf',[-0.99 0 0.99]
+MF5='PS':'trimf',[0 0.99 1.98]
+MF6='PM':'trimf',[0.99 1.98 3]
+MF7='PB':'trimf',[1.98 3 3.75]
+
+[Input2]
+Name='ec'
+Range=[-3 3]
+NumMFs=9
+MF1='NB':'trimf',[-3.75 -3 -2.25]
+MF2='NM':'trimf',[-3 -2.25 -1.5]
+MF3='NS':'trimf',[-2.25 -1.5 -0.75]
+MF4='NVS':'trimf',[-1.5 -0.75 0]
+MF5='ZE':'trimf',[-0.75 0 0.75]
+MF6='PVS':'trimf',[0 0.75 1.5]
+MF7='PS':'trimf',[0.75 1.5 2.25]
+MF8='PM':'trimf',[1.5 2.25 3]
+MF9='PB':'trimf',[2.25 3 3.75]
+
+[Output1]
+Name='q2_errors'
+Range=[-5 5]
+NumMFs=7
+MF1='NB':'trimf',[-6.665 -5 -3.333]
+MF2='NM':'trimf',[-5 -3.333 -1.667]
+MF3='NS':'trimf',[-3.333 -1.667 0]
+MF4='ZE':'trimf',[-1.667 0 1.667]
+MF5='PS':'trimf',[0 1.667 3.333]
+MF6='PM':'trimf',[1.667 3.333 5]
+MF7='PB':'trimf',[3.333 5 6.67]
+
+[Rules]
+0 1, 1 (1) : 1
+0 2, 2 (1) : 1
+0 3, 3 (1) : 1
+0 7, 5 (1) : 1
+0 8, 6 (1) : 1
+0 9, 7 (1) : 1
+1 4, 1 (1) : 1
+1 5, 1 (1) : 1
+1 6, 1 (1) : 1
+2 4, 3 (1) : 1
+2 5, 4 (1) : 1
+2 6, 3 (1) : 1
+3 4, 4 (1) : 1
+3 5, 4 (1) : 1
+3 6, 5 (1) : 1
+4 4, 4 (1) : 1
+4 5, 4 (1) : 1
+4 6, 4 (1) : 1
+5 4, 3 (1) : 1
+5 5, 4 (1) : 1
+5 6, 4 (1) : 1
+6 4, 5 (1) : 1
+6 5, 4 (1) : 1
+6 6, 5 (1) : 1
+7 4, 7 (1) : 1
+7 5, 7 (1) : 1
+7 6, 7 (1) : 1
