@@ -13,11 +13,11 @@ DefuzzMethod='centroid'
 
 [Input1]
 Name='eh'
-Range=[-5 5]
+Range=[-3 3]
 NumMFs=3
-MF1='NEG':'trimf',[-6.25 -5 0]
-MF2='EZ':'trimf',[-5 0 5]
-MF3='POS':'trimf',[0 5 6.25]
+MF1='NEG':'trimf',[-3.75 -3 0]
+MF2='EZ':'trimf',[-3 0 3]
+MF3='POS':'trimf',[0 3 3.75]
 
 [Input2]
 Name='deh'
@@ -29,13 +29,13 @@ MF3='POS':'trimf',[0 3 3.75]
 
 [Output1]
 Name='q2_errors'
-Range=[0 15]
+Range=[-5 5]
 NumMFs=5
-MF1='DimM':'trimf',[-2.495 0 3.75]
-MF2='Dim':'trimf',[0 3.75 7.5]
-MF3='Const':'trimf',[3.75 7.5 11.25]
-MF4='Aum':'trimf',[7.5 11.25 15]
-MF5='AumM':'trimf',[11.25 15 17.5]
+MF1='DimM':'trimf',[-6.663 -5 -2.5]
+MF2='Dim':'trimf',[-5 -2.5 0]
+MF3='Const':'trimf',[-2.5 0 2.5]
+MF4='Aum':'trimf',[0 2.5 5]
+MF5='AumM':'trimf',[2.5 5 6.667]
 
 [Rules]
 1 1, 2 (1) : 1
