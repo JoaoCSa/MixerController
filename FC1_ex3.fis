@@ -29,13 +29,13 @@ MF3='POS':'trimf',[0 3 3.75]
 
 [Output1]
 Name='q2_errors'
-Range=[-15 15]
+Range=[0 15]
 NumMFs=5
-MF1='DimM':'trimf',[-19.99 -15 -7.5]
-MF2='Dim':'trimf',[-15 -7.5 0]
-MF3='Const':'trimf',[-7.5 0 7.5]
-MF4='Aum':'trimf',[0 7.5 15]
-MF5='AumM':'trimf',[7.5 15 20]
+MF1='DimM':'trimf',[-2.495 0 3.75]
+MF2='Dim':'trimf',[0 3.75 7.5]
+MF3='Const':'trimf',[3.75 7.5 11.25]
+MF4='Aum':'trimf',[7.5 11.25 15]
+MF5='AumM':'trimf',[11.25 15 17.5]
 
 [Rules]
 1 1, 2 (1) : 1
